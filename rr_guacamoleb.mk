@@ -17,6 +17,9 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 # Inherit GApps
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
+# Inherit Lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := rr_guacamoleb
 PRODUCT_DEVICE := guacamoleb
