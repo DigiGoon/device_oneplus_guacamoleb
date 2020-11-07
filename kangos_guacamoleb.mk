@@ -11,23 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from guacamoleb device
 $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 
-# Inherit some common Evolution-X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common KangOS stuff.
+$(call inherit-product, vendor/kangos/config/common.mk)
 
-# Official
-EVO_BUILD_TYPE := OFFICIAL
-WITH_GAPPS := true
+
+USE_GAPPS := true
+KANGOS_BUILDTYPE := OFFICIAL
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Maintainer Prop
-EVO_DONATE_URL := https://paypal.me/spookcity138
-EVO_MAINTAINER := Rick_Macek
-EVO_SUPPORT_URL := https://t.me/EvolutionXOnePlus
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_guacamoleb
+PRODUCT_NAME := kangos_guacamoleb
 PRODUCT_DEVICE := guacamoleb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7

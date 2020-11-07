@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_guacamoleb.mk
+    $(LOCAL_DIR)/kangos_guacamoleb.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_guacamoleb-user \
-    evolution_guacamoleb-userdebug \
-    evolution_guacamoleb-eng
+    kangos_guacamoleb-user \
+    kangos_guacamoleb-userdebug \
+    kangos_guacamoleb-eng
