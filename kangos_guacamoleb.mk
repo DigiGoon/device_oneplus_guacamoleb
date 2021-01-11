@@ -14,8 +14,6 @@ $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 # Inherit some common KangOS stuff.
 $(call inherit-product, vendor/kangos/config/common.mk)
 
-
-USE_GAPPS := true
 KANGOS_BUILDTYPE := OFFICIAL
 
 # Boot Animation
