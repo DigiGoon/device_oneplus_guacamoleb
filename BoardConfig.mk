@@ -11,6 +11,9 @@ DEVICE_PATH := device/oneplus/guacamoleb
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Kernel
+TARGET_KERNEL_CONFIG := crdroid_defconfig
+
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
