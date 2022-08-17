@@ -44,3 +44,27 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus7-user 10 QKQ1.190716.003 2003131900 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# chipset flag (one word only/no spacing)
+RICE_CHIPSET := Snapdragon®855
+
+# gapps build flag, if not defined build type is vanilla
+WITH_GMS := true
+
+# Sushi Bootanimation (only 720/1080p/1440 supported. if not defined, bootanimation is google bootanimation)
+SUSHI_BOOTANIMATION := 1080
+
+# Graphene Camera
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := true
+
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
